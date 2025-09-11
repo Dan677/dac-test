@@ -3749,7 +3749,13 @@ body.dark-mode .Posts {
 background-color: var(--prussian-blue);
 
 }
+.logo-mobile { display: none; }
 
+/* Pe mobil, ascundem titlul complet și afișăm prescurtarea */
+@media (max-width: 768px) {
+  .logo-desktop { display: none; }
+  .logo-mobile { display: inline; }
+}
 
 
 /* Și titlurile vor fi gri deschis în dark mode, la fel ca la services */
