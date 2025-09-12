@@ -3729,34 +3729,51 @@ object-fit: cover;
 
 }
 .logo-desktop {
-  display: none;
+  display: none; /* Ascunde logo-ul de desktop pe mobil */
 }
 
+.logo-mobile {
+  display: inline; /* Afișează logo-ul de mobil pe mobil */
+}
+
+
+/* Stiluri pentru ecrane mari (desktop) */
 @media (min-width: 992px) {
   .logo-mobile {
-    display: none;
+    display: none; /* Ascunde logo-ul de mobil pe desktop */
   }
   .logo-desktop {
-    display: inline;
+    display: inline; /* Afișează logo-ul de desktop pe desktop */
   }
 }
 
 
-/* Aici este modificarea pentru a folosi clasa .Posts */
+/* Stiluri pentru meniul de mobil (se aplică doar la ecrane de maxim 991px) */
+@media (max-width: 991px) {
+  .navbar.active {
+    background-color: var(--white) !important;
+  }
+  .navbar-list {
+    background-color: var(--white) !important;
+  }
+  .navbar-list a.navbar-link {
+    color: var(--black) !important;
+    background-color: transparent !important;
+  }
+  .navbar-list ion-icon {
+    color: var(--black) !important;
+  }
 
+  /* Adăugare pentru logo-ul de pe mobil în dark mode */
+  body.dark-mode .logo-mobile {
+    color: var(--black) !important;
+  }
+}
 body.dark-mode .Posts {
 
 background-color: var(--prussian-blue);
 
 }
-.logo-mobile { display: none; }
-
-/* Pe mobil, ascundem titlul complet și afișăm prescurtarea */
-@media (max-width: 768px) {
-  .logo-desktop { display: none; }
-  .logo-mobile { display: inline; }
-}
-
 
 /* Și titlurile vor fi gri deschis în dark mode, la fel ca la services */
 
