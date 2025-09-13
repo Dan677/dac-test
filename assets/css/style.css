@@ -3767,7 +3767,7 @@ object-fit: cover;
     color: var(--black) !important;
   }
   .header .logo {
-    font-size: 2.0rem; /* Poți ajusta această valoare. */
+    font-size: 1.8rem; /* Poți ajusta această valoare. */
   }
 }
 body.dark-mode .Posts {
