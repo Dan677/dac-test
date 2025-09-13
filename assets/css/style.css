@@ -670,6 +670,10 @@ transition: var(--transition);
     color: var(--black);
     background-color: transparent;
   }
+  .nav-open-btn {
+      display: block; /* Asigură-te că butonul este vizibil */
+      z-index: 100; /* Asigură-te că este deasupra altor elemente */
+    }
 }
 
 .navbar-item:not(:last-child) { border-block-end: 1px solid var(--plutinum); }
