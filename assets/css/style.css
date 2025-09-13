@@ -666,9 +666,11 @@ transition: var(--transition);
     background-color: transparent;
   }
   .nav-open-btn {
-      display: block; /* Asigură-te că butonul este vizibil */
-      z-index: 100; /* Asigură-te că este deasupra altor elemente */
-    }
+      display: block;
+      z-index: 100;
+      color: var(--black); /* Asigură că este vizibil pe un fundal deschis */
+      margin-right: 15px; /* Îl mută puțin la stânga pentru aliniere */
+  }
 }
 
 .navbar-item:not(:last-child) { border-block-end: 1px solid var(--plutinum); }
