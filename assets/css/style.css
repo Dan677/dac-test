@@ -3775,7 +3775,15 @@ body.dark-mode .Posts {
 background-color: var(--prussian-blue);
 
 }
-
+body.dark-mode .posts-card .card-title,
+body.dark-mode .posts-card .card-title a {
+  background-color: transparent !important;
+  color: var(--black) !important;
+}
+body.dark-mode .posts-card .card-title:hover {
+  background-color: transparent !important;
+  color: var(--black) !important;
+}
 /* Și titlurile vor fi gri deschis în dark mode, la fel ca la services */
 
 body.dark-mode .Posts .h2 {
