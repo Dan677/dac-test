@@ -509,24 +509,19 @@ gap: 30px;
 
 
 .btn-link {
-
-color: var(--dark-orange);
-
-font-size: var(--fs-7);
-
-text-transform: uppercase;
-
-display: flex;
-
-align-items: center;
-
-gap: 5px;
-
-overflow: hidden;
-
+  color: var(--dark-orange);
+  font-size: var(--fs-7);
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
-
+@media (max-width: 991px) {
+  .btn-link .span {
+    white-space: nowrap;
+  }
+}
 
 .btn-link > * {
 
