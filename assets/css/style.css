@@ -3736,8 +3736,6 @@ object-fit: cover;
   display: inline; /* Afișează logo-ul de mobil pe mobil */
 }
 
-
-/* Stiluri pentru ecrane mari (desktop) */
 @media (min-width: 992px) {
   .logo-mobile {
     display: none; /* Ascunde logo-ul de mobil pe desktop */
@@ -3767,6 +3765,9 @@ object-fit: cover;
   /* Adăugare pentru logo-ul de pe mobil în dark mode */
   body.dark-mode .logo-mobile {
     color: var(--black) !important;
+  }
+  .header .logo {
+    font-size: 2.8rem; /* Poți ajusta această valoare. */
   }
 }
 body.dark-mode .Posts {
