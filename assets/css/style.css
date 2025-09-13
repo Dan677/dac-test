@@ -665,6 +665,7 @@ transition: var(--transition);
     font-size: 2.5rem;
     color: var(--black);
     background-color: transparent;
+    padding: 15px;
   }
   .nav-open-btn {
     display: block;
