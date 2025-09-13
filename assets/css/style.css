@@ -618,11 +618,6 @@ transition: var(--transition);
   color: var(--white);
   font-size: 35px;
 }
-.nav-close-btn,
-.theme-switch-btn,
-.nav-link.active {
-  color: var(--black);
-}
 .nav-open-btn ion-icon {
   --ionicon-stroke-width: 40px;
 }
@@ -674,7 +669,7 @@ transition: var(--transition);
   .nav-open-btn {
     display: block;
     z-index: 100;
-    margin-right: 15px;
+    margin-right: 18px;
   }
 }
 .navbar-item:not(:last-child) { border-block-end: 1px solid var(--plutinum); }
