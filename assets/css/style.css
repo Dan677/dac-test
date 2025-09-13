@@ -618,8 +618,14 @@ transition: var(--transition);
   color: var(--white);
   font-size: 35px;
 }
-
-.nav-open-btn ion-icon { --ionicon-stroke-width: 40px; }
+.nav-close-btn,
+.theme-switch-btn,
+.nav-link.active {
+  color: var(--black);
+}
+.nav-open-btn ion-icon {
+  --ionicon-stroke-width: 40px;
+}
 
 .navbar {
   position: fixed;
@@ -666,13 +672,11 @@ transition: var(--transition);
     background-color: transparent;
   }
   .nav-open-btn {
-      display: block;
-      z-index: 100;
-      color: var(--black); /* Asigură că este vizibil pe un fundal deschis */
-      margin-right: 15px; /* Îl mută puțin la stânga pentru aliniere */
+    display: block;
+    z-index: 100;
+    margin-right: 15px;
   }
 }
-
 .navbar-item:not(:last-child) { border-block-end: 1px solid var(--plutinum); }
 
 .navbar-link {
