@@ -659,9 +659,18 @@ transition: var(--transition);
   font-size: 3rem;
 }
 
-.nav-close-btn { font-size: 25px; }
-
-.nav-close-btn ion-icon { --ionicon-stroke-width: 40px; }
+@media (max-width: 991px) {
+  .nav-close-btn {
+    display: block;
+    z-index: 1000;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 2.5rem;
+    color: var(--black);
+    background-color: transparent;
+  }
+}
 
 .navbar-item:not(:last-child) { border-block-end: 1px solid var(--plutinum); }
 
