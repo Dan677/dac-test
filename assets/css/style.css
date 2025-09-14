@@ -1125,6 +1125,21 @@ border: 20px solid var(--cultured-3);
 transition: var(--transition);
 
 }
+.service-card .card-icon {
+  width: 160px; /* Am mărit lățimea */
+  height: 160px; /* Am mărit înălțimea */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-card .card-icon img {
+  width: 100%; /* Imaginea va umple acum 120px */
+  height: auto;
+  object-fit: contain;
+  /* Eliminați linia 'transform: scale(1.6);' */
+}
+
 .posts-card {
   background-color: var(--white);
   padding: 30px;
