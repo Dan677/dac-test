@@ -329,7 +329,7 @@ window.addEventListener("load", checkHeaderInView);
 window.addEventListener("scroll", checkHeaderInView);
 
 document.addEventListener("DOMContentLoaded", function() {
-  emailjs.init("YOUR_PUBLIC_KEY");
+  emailjs.init("q7AxL2C9AbcD3fZ1Q");
 
   const form = document.getElementById('contact-form');
 
