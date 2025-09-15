@@ -161,174 +161,174 @@ document.addEventListener('DOMContentLoaded', () => {
     projectCards.forEach(card => card.classList.toggle('dark-mode', isDark));
   });
 
-const heroContent = document.querySelector(".hero-content");
+  const heroContent = document.querySelector(".hero-content");
 
-function checkHeroInView() {
-  const rect = heroContent.getBoundingClientRect();
-  const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+  function checkHeroInView() {
+    const rect = heroContent.getBoundingClientRect();
+    const windowHeight = window.innerHeight || document.documentElement.clientHeight;
 
-  if (rect.top < windowHeight && rect.bottom > 0) {
-    heroContent.classList.add("show");
-  } else {
-    heroContent.classList.remove("show");
+    if (rect.top < windowHeight && rect.bottom > 0) {
+      heroContent.classList.add("show");
+    } else {
+      heroContent.classList.remove("show");
+    }
   }
-}
 
-// verificare la load (inclusiv redirecționare #home)
-window.addEventListener("load", checkHeroInView);
-// verificare la scroll
-window.addEventListener("scroll", checkHeroInView);
-const aboutContent = document.querySelector(".about-content");
+  // verificare la load (inclusiv redirecționare #home)
+  window.addEventListener("load", checkHeroInView);
+  // verificare la scroll
+  window.addEventListener("scroll", checkHeroInView);
+  const aboutContent = document.querySelector(".about-content");
 
-function checkAboutInView() {
-  const rect = aboutContent.getBoundingClientRect();
-  const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+  function checkAboutInView() {
+    const rect = aboutContent.getBoundingClientRect();
+    const windowHeight = window.innerHeight || document.documentElement.clientHeight;
 
-  if (rect.top < windowHeight && rect.bottom > 0) {
-    aboutContent.classList.add("show");
-  } else {
-    aboutContent.classList.remove("show");
+    if (rect.top < windowHeight && rect.bottom > 0) {
+      aboutContent.classList.add("show");
+    } else {
+      aboutContent.classList.remove("show");
+    }
   }
-}
 
-// verificare la scroll și load
-window.addEventListener("load", checkAboutInView);
-window.addEventListener("scroll", checkAboutInView);
-const serviceSection = document.querySelector(".service");
+  // verificare la scroll și load
+  window.addEventListener("load", checkAboutInView);
+  window.addEventListener("scroll", checkAboutInView);
+  const serviceSection = document.querySelector(".service");
 
-function checkServiceInView() {
-  const rect = serviceSection.getBoundingClientRect();
-  const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+  function checkServiceInView() {
+    const rect = serviceSection.getBoundingClientRect();
+    const windowHeight = window.innerHeight || document.documentElement.clientHeight;
 
-  if (rect.top < windowHeight && rect.bottom > 0) {
-    serviceSection.classList.add("show");
-  } else {
-    serviceSection.classList.remove("show");
+    if (rect.top < windowHeight && rect.bottom > 0) {
+      serviceSection.classList.add("show");
+    } else {
+      serviceSection.classList.remove("show");
+    }
   }
-}
 
-// verificare la scroll și load
-window.addEventListener("load", checkServiceInView);
-window.addEventListener("scroll", checkServiceInView);
+  // verificare la scroll și load
+  window.addEventListener("load", checkServiceInView);
+  window.addEventListener("scroll", checkServiceInView);
 
-const zoneSection = document.querySelector(".zone");
+  const zoneSection = document.querySelector(".zone");
 
-function checkZoneInView() {
-  const rect = zoneSection.getBoundingClientRect();
-  const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+  function checkZoneInView() {
+    const rect = zoneSection.getBoundingClientRect();
+    const windowHeight = window.innerHeight || document.documentElement.clientHeight;
 
-  if (rect.top < windowHeight && rect.bottom > 0) {
-    zoneSection.classList.add("show");
-  } else {
-    zoneSection.classList.remove("show");
+    if (rect.top < windowHeight && rect.bottom > 0) {
+      zoneSection.classList.add("show");
+    } else {
+      zoneSection.classList.remove("show");
+    }
   }
-}
 
-// verificare la load și scroll
-window.addEventListener("load", checkZoneInView);
-window.addEventListener("scroll", checkZoneInView);
+  // verificare la load și scroll
+  window.addEventListener("load", checkZoneInView);
+  window.addEventListener("scroll", checkZoneInView);
 
-const projectSection = document.querySelector(".project");
+  const projectSection = document.querySelector(".project");
 
-function checkProjectInView() {
-  const rect = projectSection.getBoundingClientRect();
-  const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+  function checkProjectInView() {
+    const rect = projectSection.getBoundingClientRect();
+    const windowHeight = window.innerHeight || document.documentElement.clientHeight;
 
-  if (rect.top < windowHeight && rect.bottom > 0) {
-    projectSection.classList.add("show");
-  } else {
-    projectSection.classList.remove("show");
+    if (rect.top < windowHeight && rect.bottom > 0) {
+      projectSection.classList.add("show");
+    } else {
+      projectSection.classList.remove("show");
+    }
   }
-}
 
-// verificare la load și scroll
-window.addEventListener("load", checkProjectInView);
-window.addEventListener("scroll", checkProjectInView);
+  // verificare la load și scroll
+  window.addEventListener("load", checkProjectInView);
+  window.addEventListener("scroll", checkProjectInView);
 
-const blogSection = document.querySelector(".blog");
+  const blogSection = document.querySelector(".blog");
 
-function checkBlogInView() {
-  const rect = blogSection.getBoundingClientRect();
-  const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+  function checkBlogInView() {
+    const rect = blogSection.getBoundingClientRect();
+    const windowHeight = window.innerHeight || document.documentElement.clientHeight;
 
-  if (rect.top < windowHeight && rect.bottom > 0) {
-    blogSection.classList.add("show");
-  } else {
-    blogSection.classList.remove("show");
+    if (rect.top < windowHeight && rect.bottom > 0) {
+      blogSection.classList.add("show");
+    } else {
+      blogSection.classList.remove("show");
+    }
   }
-}
 
-// verificare la load și scroll
-window.addEventListener("load", checkBlogInView);
-window.addEventListener("scroll", checkBlogInView);
+  // verificare la load și scroll
+  window.addEventListener("load", checkBlogInView);
+  window.addEventListener("scroll", checkBlogInView);
 
-const postsSection = document.querySelector(".Posts");
+  const postsSection = document.querySelector(".Posts");
 
-function checkPostsInView() {
-  const rect = postsSection.getBoundingClientRect();
-  const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+  function checkPostsInView() {
+    const rect = postsSection.getBoundingClientRect();
+    const windowHeight = window.innerHeight || document.documentElement.clientHeight;
 
-  if (rect.top < windowHeight && rect.bottom > 0) {
-    postsSection.classList.add("show");
-  } else {
-    postsSection.classList.remove("show");
+    if (rect.top < windowHeight && rect.bottom > 0) {
+      postsSection.classList.add("show");
+    } else {
+      postsSection.classList.remove("show");
+    }
   }
-}
 
-// verificare la load și scroll
-window.addEventListener("load", checkPostsInView);
-window.addEventListener("scroll", checkPostsInView);
+  // verificare la load și scroll
+  window.addEventListener("load", checkPostsInView);
+  window.addEventListener("scroll", checkPostsInView);
 
-const newsletterSection = document.querySelector(".newsletter");
+  const newsletterSection = document.querySelector(".newsletter");
 
-function checkNewsletterInView() {
-  const rect = newsletterSection.getBoundingClientRect();
-  const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+  function checkNewsletterInView() {
+    const rect = newsletterSection.getBoundingClientRect();
+    const windowHeight = window.innerHeight || document.documentElement.clientHeight;
 
-  if (rect.top < windowHeight && rect.bottom > 0) {
-    newsletterSection.classList.add("show");
-  } else {
-    newsletterSection.classList.remove("show");
+    if (rect.top < windowHeight && rect.bottom > 0) {
+      newsletterSection.classList.add("show");
+    } else {
+      newsletterSection.classList.remove("show");
+    }
   }
-}
 
-// verificare la load și scroll
-window.addEventListener("load", checkNewsletterInView);
-window.addEventListener("scroll", checkNewsletterInView);
+  // verificare la load și scroll
+  window.addEventListener("load", checkNewsletterInView);
+  window.addEventListener("scroll", checkNewsletterInView);
 
-const footerSection = document.querySelector(".footer");
+  const footerSection = document.querySelector(".footer");
 
-function checkFooterInView() {
-  const rect = footerSection.getBoundingClientRect();
-  const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+  function checkFooterInView() {
+    const rect = footerSection.getBoundingClientRect();
+    const windowHeight = window.innerHeight || document.documentElement.clientHeight;
 
-  if (rect.top < windowHeight && rect.bottom > 0) {
-    footerSection.classList.add("show");
-  } else {
-    footerSection.classList.remove("show");
+    if (rect.top < windowHeight && rect.bottom > 0) {
+      footerSection.classList.add("show");
+    } else {
+      footerSection.classList.remove("show");
+    }
   }
-}
-// verificare la load și scroll
-window.addEventListener("load", checkFooterInView);
-window.addEventListener("scroll", checkFooterInView);
+  // verificare la load și scroll
+  window.addEventListener("load", checkFooterInView);
+  window.addEventListener("scroll", checkFooterInView);
 
-const headerSection = document.querySelector(".header");
+  const headerSection = document.querySelector(".header");
 
-function checkHeaderInView() {
-  const rect = headerSection.getBoundingClientRect();
-  const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+  function checkHeaderInView() {
+    const rect = headerSection.getBoundingClientRect();
+    const windowHeight = window.innerHeight || document.documentElement.clientHeight;
 
-  if (rect.top < windowHeight && rect.bottom > 0) {
-    headerSection.classList.add("show");
-  } else {
-    headerSection.classList.remove("show");
+    if (rect.top < windowHeight && rect.bottom > 0) {
+      headerSection.classList.add("show");
+    } else {
+      headerSection.classList.remove("show");
+    }
   }
-}
 
-window.addEventListener("load", checkHeaderInView);
-window.addEventListener("scroll", checkHeaderInView);
+  window.addEventListener("load", checkHeaderInView);
+  window.addEventListener("scroll", checkHeaderInView);
 
-document.addEventListener("DOMContentLoaded", function() {
+  // AICI ESTE CODUL CORECTAT PENTRU FORMULAR
   emailjs.init("q7AxL2C9AbcD3fZ1Q");
 
   const form = document.getElementById('contact-form');
@@ -338,7 +338,7 @@ document.addEventListener("DOMContentLoaded", function() {
       e.preventDefault();
 
       emailjs.send("service_zm42bh4", "template_w5fmo3t", {
-        full_name: document.getElementById("full_name").value,
+        name: document.getElementById("full_name").value,
         email: document.getElementById("email").value,
         phone: document.getElementById("phone").value,
         message: document.getElementById("message").value
@@ -351,7 +351,6 @@ document.addEventListener("DOMContentLoaded", function() {
       });
     });
   }
-});
 });
 
 
