@@ -327,8 +327,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   window.addEventListener("load", checkHeaderInView);
   window.addEventListener("scroll", checkHeaderInView);
-
-  // AICI ESTE CODUL CORECTAT PENTRU FORMULAR
   emailjs.init("q7AxL2C9AbcD3fZ1Q");
 
   const form = document.getElementById('contact-form');
@@ -338,7 +336,7 @@ document.addEventListener('DOMContentLoaded', () => {
       e.preventDefault();
 
       emailjs.send("service_zm42bh4", "template_w5fmo3t", {
-        name: document.getElementById("full_name").value,
+        full_name: document.getElementById("full_name").value,
         email: document.getElementById("email").value,
         phone: document.getElementById("phone").value,
         message: document.getElementById("message").value
@@ -352,9 +350,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
-
-
-
 
 
 
