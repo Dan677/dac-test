@@ -894,10 +894,10 @@
       <h2 class="h2 section-title">Complete with your datas</h2>
 
       <p class="section-text">
-         A representative will contact you shortly.
+        A representative will contact you shortly.
       </p>
 
-      <form action="./process_form.php" method="post" class="contact-form" id="contact-form">
+      <form class="contact-form" id="contact-form">
         <div class="form-group">
           <label for="full_name" class="form-label">Full Name:</label>
           <input type="text" name="full_name" id="full_name" required placeholder="Your full name">
@@ -910,7 +910,7 @@
 
         <div class="form-group">
           <label for="phone" class="form-label">Phone Number:</label>
-          <input type="tel" name="phone" id="phone" placeholder="Ex: +1 (555) 123-4567" required>
+          <input type="tel" name="phone" id="phone" required placeholder="Ex: +1 (555) 123-4567">
         </div>
 
         <div class="form-group">
@@ -1014,6 +1014,7 @@
 <!--
   - custom js link
 -->
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 <script src="./assets/js/script.js" defer></script>
 
 <!--

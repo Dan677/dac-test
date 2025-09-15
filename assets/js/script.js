@@ -308,7 +308,6 @@ function checkFooterInView() {
     footerSection.classList.remove("show");
   }
 }
-
 // verificare la load și scroll
 window.addEventListener("load", checkFooterInView);
 window.addEventListener("scroll", checkFooterInView);
@@ -328,6 +327,31 @@ function checkHeaderInView() {
 
 window.addEventListener("load", checkHeaderInView);
 window.addEventListener("scroll", checkHeaderInView);
+
+document.addEventListener("DOMContentLoaded", function() {
+  emailjs.init("YOUR_PUBLIC_KEY");
+
+  const form = document.getElementById('contact-form');
+
+  if (form) {
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      emailjs.send("service_zm42bh4", "template_w5fmo3t", {
+        full_name: document.getElementById("full_name").value,
+        email: document.getElementById("email").value,
+        phone: document.getElementById("phone").value,
+        message: document.getElementById("message").value
+      }).then(function(response) {
+        alert("Email trimis cu succes! Vă vom contacta în curând.");
+        form.reset();
+      }, function(error) {
+        alert("A apărut o eroare. Te rugăm să încerci din nou.");
+        console.error("EmailJS Error:", error);
+      });
+    });
+  }
+});
 });
 
 
