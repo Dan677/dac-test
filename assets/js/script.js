@@ -327,7 +327,34 @@ document.addEventListener('DOMContentLoaded', () => {
 
   window.addEventListener("load", checkHeaderInView);
   window.addEventListener("scroll", checkHeaderInView);
-  emailjs.init("q7AxL2C9AbcD3fZ1Q");
+document.getElementById('confirm-form').addEventListener('submit', function(event) {
+  event.preventDefault(); // Oprește trimiterea formularului
+
+  // Aici preiei valorile din formular
+  var full_name = document.getElementById("full_name").value;
+  var email = document.getElementById("email").value;
+  var phone = document.getElementById("phone").value;
+  var message = document.getElementById("message").value;
+
+  // Trimite emailul de confirmare cu EmailJS
+  emailjs.send("service_mih8sf", "template_1ul0t6l", {
+    full_name: full_name,
+    email: email,
+    phone: phone,
+    message: message
+  }).then(function(response) {
+    console.log("SUCCESS!", response.status, response.text);
+    alert("Email de confirmare trimis cu succes!");
+  }, function(error) {
+    console.log("FAILED...", error);
+    alert("A apărut o eroare la trimiterea emailului de confirmare.");
+  });
+
+  // Aici poți trimite formularul către Formspree
+  // (ai putea face asta folosind fetch, dar pentru simplitate
+  // o poți lăsa doar cu HTML-ul de mai sus, care va trimite datele
+  // atunci când utilizatorul apasă pe buton)
+});
 });
 
 
