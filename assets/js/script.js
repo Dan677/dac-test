@@ -343,8 +343,7 @@ const form = document.getElementById('contact-form');
         body: JSON.stringify(data)
       });
       if (response.ok) {
-        // Aici poți arăta un mesaj de succes pe pagină
-        form.reset(); // Curăță câmpurile formularului
+        form.reset();
       } else {
         // Aici poți arăta un mesaj de eroare
         alert('A apărut o problemă la trimiterea formularului.');
