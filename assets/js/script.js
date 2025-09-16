@@ -328,14 +328,11 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener("load", checkHeaderInView);
   window.addEventListener("scroll", checkHeaderInView);
 
-  const form = document.getElementById('contact-form');
-
+const form = document.getElementById('contact-form');
   form.addEventListener('submit', async (event) => {
     event.preventDefault();
-
     const formData = new FormData(form);
     const data = Object.fromEntries(formData.entries());
-
     try {
       const response = await fetch('https://formspree.io/f/mldwkypw', {
         method: 'POST',
@@ -347,7 +344,6 @@ document.addEventListener('DOMContentLoaded', () => {
       });
       if (response.ok) {
         // Aici poți arăta un mesaj de succes pe pagină
-        alert('Formularul a fost trimis cu succes!');
         form.reset(); // Curăță câmpurile formularului
       } else {
         // Aici poți arăta un mesaj de eroare
