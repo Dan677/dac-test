@@ -328,27 +328,6 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener("load", checkHeaderInView);
   window.addEventListener("scroll", checkHeaderInView);
   emailjs.init("q7AxL2C9AbcD3fZ1Q");
-
-  const form = document.getElementById('contact-form');
-
-  if (form) {
-    form.addEventListener('submit', function(e) {
-      e.preventDefault();
-
-      emailjs.send("service_mih8sf", "template_1ul0t6l", {
-        full_name: document.getElementById("full_name").value,
-        email: document.getElementById("email").value,
-        phone: document.getElementById("phone").value,
-        message: document.getElementById("message").value
-      }).then(function(response) {
-        alert("Email trimis cu succes! Vă vom contacta în curând.");
-        form.reset();
-      }, function(error) {
-        alert("A apărut o eroare. Te rugăm să încerci din nou.");
-        console.error("EmailJS Error:", error);
-      });
-    });
-  }
 });
 
 
